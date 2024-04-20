@@ -10,7 +10,7 @@ app.use(cors());
 app.use('/', router);
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('Hello World!');
+  res.send('Shut up and code!');
 });
 
 app.use(globalErrorHandler);

@@ -4,7 +4,7 @@ import jwt, { JwtPayload } from 'jsonwebtoken';
 import config from '../config';
 import AppError from './Errors/AppError';
 import catchAsync from '../utils/catchAsync';
-import { TUSER_ROLE } from '../User/user.interface';
+import { TUSER_ROLE } from '../Modules/User/user.interface';
 
 const auth = (...requiredRoles: TUSER_ROLE[]) => {
   return catchAsync(async (req: Request, res: Response, next: NextFunction) => {

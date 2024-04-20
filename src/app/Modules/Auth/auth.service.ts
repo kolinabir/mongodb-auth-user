@@ -6,8 +6,8 @@ import { TLoginUser } from './auth.interface';
 import jwt, { JwtPayload } from 'jsonwebtoken';
 
 import bcrypt from 'bcrypt';
-import config from '../config';
-import AppError from '../middlewares/Errors/AppError';
+import config from '../../config';
+import AppError from '../../middlewares/Errors/AppError';
 
 const loginUser = async (payload: TLoginUser) => {
   //check if user exists in database

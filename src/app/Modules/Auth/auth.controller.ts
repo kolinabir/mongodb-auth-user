@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import httpStatus from 'http-status';
-import catchAsync from '../utils/catchAsync';
-import sendResponse from '../utils/sendRespone';
+import catchAsync from '../../utils/catchAsync';
+import sendResponse from '../../utils/sendRespone';
 import { AuthServices } from './auth.service';
 
 const loginUser = catchAsync(async (req, res) => {
